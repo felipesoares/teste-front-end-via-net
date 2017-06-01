@@ -289,16 +289,16 @@ body {
   opacity: .7;
 }
 
-div[aria-describedby='dialog-contato'].ui-dialog {
+.ui-dialog {
   padding: 0;
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
   border-radius: 0;
 }
-div[aria-describedby='dialog-contato'].ui-dialog.ui-widget.ui-widget-content {
+.ui-dialog.ui-widget.ui-widget-content {
   border: 0 none;
 }
-div[aria-describedby='dialog-contato'].ui-dialog .ui-widget-header {
+.ui-dialog .ui-widget-header {
   background: #9a3235;
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
@@ -307,14 +307,14 @@ div[aria-describedby='dialog-contato'].ui-dialog .ui-widget-header {
   height: 53px;
   padding: 0;
 }
-div[aria-describedby='dialog-contato'].ui-dialog .ui-dialog-title {
+.ui-dialog .ui-dialog-title {
   font-family: "OpenSans";
   font-size: 18px;
   color: #fff;
   letter-spacing: 0em;
   padding: 15px 0 0 20px;
 }
-div[aria-describedby='dialog-contato'].ui-dialog .ui-dialog-titlebar-close {
+.ui-dialog .ui-dialog-titlebar-close {
   height: 44px;
   width: 41px;
   background: #b87072;
@@ -331,39 +331,40 @@ div[aria-describedby='dialog-contato'].ui-dialog .ui-dialog-titlebar-close {
   letter-spacing: 0em;
   text-indent: inherit;
 }
-div[aria-describedby='dialog-contato'].ui-dialog .ui-dialog-buttonpane button {
+.ui-dialog .ui-dialog-buttonpane button {
   font-size: 12px;
 }
-div[aria-describedby='dialog-contato'].ui-dialog .dialog-contato {
-  display: none;
+.ui-dialog .dialog-contato {
   padding: 30px 14%;
 }
-div[aria-describedby='dialog-contato'].ui-dialog .dialog-contato p {
+.ui-dialog .dialog-contato p {
   font-family: "OpenSans";
   font-size: 15px;
   color: #333;
   letter-spacing: 0em;
   text-align: center;
 }
-div[aria-describedby='dialog-contato'].ui-dialog .dialog-contato .validacao {
+.ui-dialog .dialog-contato .validacao {
   height: 60px;
   padding: 10px 0 0;
 }
-div[aria-describedby='dialog-contato'].ui-dialog .dialog-contato .validacao p {
+.ui-dialog .dialog-contato .validacao p {
   display: none;
   padding: 5px;
 }
-div[aria-describedby='dialog-contato'].ui-dialog .dialog-contato form {
-  margin: 0;
-}
-div[aria-describedby='dialog-contato'].ui-dialog .dialog-contato form label {
+.ui-dialog .dialog-contato label {
   font-family: "OpenSans";
   font-size: 15px;
   color: #333;
   letter-spacing: 0em;
   padding: 0 5px;
+  display: block;
 }
-div[aria-describedby='dialog-contato'].ui-dialog .dialog-contato form .campo {
+.ui-dialog .dialog-contato .row {
+  width: 100%;
+  clear: both;
+}
+.ui-dialog .dialog-contato .campo {
   width: 100%;
   height: 38px;
   -moz-border-radius: 5px;
@@ -377,18 +378,26 @@ div[aria-describedby='dialog-contato'].ui-dialog .dialog-contato form .campo {
   color: #333;
   letter-spacing: 0em;
 }
-div[aria-describedby='dialog-contato'].ui-dialog .dialog-contato form .campo.mensagem {
+.ui-dialog .dialog-contato .campo.mensagem {
   padding: 15px;
   min-height: 100px;
 }
-div[aria-describedby='dialog-contato'].ui-dialog .dialog-contato form .tagsinput {
+.ui-dialog .dialog-contato .tagsinput {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
   border: 1px solid #ccc;
   margin: 5px 0 15px;
+  float: left;
+  height: auto !important;
 }
-div[aria-describedby='dialog-contato'].ui-dialog .dialog-contato form .btn-enviar {
+.ui-dialog .dialog-contato .btn-add-tel {
+  float: right;
+  width: 38px;
+  height: 38px;
+  cursor: pointer;
+}
+.ui-dialog .dialog-contato .btn-enviar {
   background: #9a3235;
   width: 250px;
   max-width: 100%;

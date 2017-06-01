@@ -4,7 +4,7 @@
 
 <head>
 
-  <title>Teste Front End - Via Net Brasil</title>
+  <title>Teste</title>
   <meta name="description" content="Teste Front End - Via Net Brasil" />
   <meta name="author" content="Felipe Soares" />
 
@@ -22,59 +22,82 @@
 
 <body>
 
-    <main class="main">
+  <main class="main">
 
-      <section id="destaques" class="destaques">
+    <section id="destaques" class="destaques">
 
-        <div class="grid-container">
+      <div class="grid-container">
 
-          <div class="grid-50 tablet-grid-50">
-            <h2 class="h">
-              <a href="#destaque-venda" id="destaque-venda">Destaque venda</a>
-            </h2>
-          </div>
-
-          <div class="grid-50 tablet-grid-50">
-            <h2 class="h">
-              <a href="#destaque-aluguel" id="destaque-aluguel">Destaque aluguel</a>
-            </h2>
-          </div>
-
-          <button class="btn-contato ui-state-default ui-corner-all"><i class="ui-icon ui-icon-circle-plus"></i></button>
+        <div class="grid-50 tablet-grid-50">
+          <h2 class="h">
+            <a href="#destaque-venda" id="destaque-venda">Destaque venda</a>
+          </h2>
         </div>
 
-      </section>
+        <div class="grid-50 tablet-grid-50">
+          <h2 class="h">
+            <a href="#destaque-aluguel" id="destaque-aluguel">Destaque aluguel</a>
+          </h2>
+        </div>
 
-    </main>
+        <i class="fa fa-bed" aria-hidden="true"></i>
+
+        <button class="btn-contato ui-state-default ui-corner-all"><i class="ui-icon ui-icon-circle-plus"></i></button>
+      </div>
+
+    </section>
+
+  </main>
 
   </div>
 
   <div id="dialog-contato" class="dialog-contato" title="Fale Conosco">
     <p>Entre em contato conosco, estamos a disposição para atendê-los!</p>
-    <div class="validacao"><p></p></div>
+    <div class="validacao">
+      <p></p>
+    </div>
     <form>
+      <div class="row">
         <label for="nome">Nome:</label>
         <input type="text" name="nome" id="nome" class="campo nome" placeholder="" autocomplete="on" required="required" />
+      </div>
 
+      <div class="row">
         <label for="email">E-mail:</label>
         <input type="email" name="email" id="email" class="campo email" placeholder="" autocomplete="on" required="required" />
+      </div>
 
+      <div class="row">
         <label for="telefones">Telefone(s):</label>
-        <input type="text" name="telefones[]" id="telefones" class="campo telefones" placeholder="" autocomplete="off" readonly="readonly" />
+        <input type="text" name="telefones[]" id="telefones" class="campo telefones" placeholder="" autocomplete="off" readonly="readonly"
+        />
+        <a href="javascript:void(0)" id="btnAddTelefone" class="btn-add-tel ui-state-default ui-corner-all">
+          <i class="ui-icon ui-icon-circle-plus"></i>
+        </a>
+      </div>
 
+      <div class="row">
         <label for="mensagem">Mensagem:</label>
         <textarea name="mensagem" class="campo mensagem" placeholder="" required="required"></textarea>
+      </div>
 
-        <input type="submit" value="Enviar mensagem" id="btnEnviarContato" class="btn-enviar" />
+      <input type="submit" value="Enviar mensagem" id="btnEnviarContato" class="btn-enviar" />
     </form>
   </div>
 
+  <div id="dialog-telefone" class="dialog-telefone" title="Adicionar Telefone">
+    <div class="row">
+      <label for="telefone">Telefone:</label>
+      <input type="tel" id="telefone" class="campo telefone" placeholder="" autofocus="on" data-mask='telefone' />
+    </div>
+  </div>
+
   <script type="text/javascript" src="dist/js/bibliotecas.min.js"></script>
-  
+
   <!--
   <script type="text/javascript" src="dist/js/script.min.js"></script>
   -->
   <script type="text/javascript" src="assets/js/default.js"></script>
-  <script type="text/javascript" src="assets/js/vianet.js"></script>
-  
+  <script type="text/javascript" src="assets/js/script.js"></script>
+
 </body>

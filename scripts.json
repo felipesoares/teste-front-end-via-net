@@ -1,7 +1,7 @@
 {
     "assets": [
         "js/default.js",
-        "js/vianet.js"
+        "js/script.js"
     ],
     "libs": [
         "jquery/dist/jquery.min.js",

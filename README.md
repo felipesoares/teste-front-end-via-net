@@ -13,8 +13,7 @@ Bower
 Git
 
 - Bibliotecas CSS:
-Reset -> Normalize CSS
-Sistema de Grids -> Unsemantic
+Reset CSS -> Normalize CSS, Sistema de Grids -> Unsemantic, Ícones -> Font Awesome
 
 - Bibliotecas Javascript:
 jQuery, jQuery UI (Dialog Modal), jQuery Tags Input & Masked Input Plugin
