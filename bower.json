@@ -1,0 +1,23 @@
+{
+  "name": "teste-front-end-via-net",
+  "description": "Teste Front End - Via Net Brasil",
+  "main": "index.js",
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize-css": "^7.0.0",
+    "unsemantic": "^1.1.3",
+    "jquery": "1",
+    "jquery.maskedinput": "^1.4.1",
+    "jquery-ui": "^1.12.1",
+    "jquery-tokeninput": "^1.7.0",
+    "jQuery-UI-Dialog-extended": "https://github.com/jasonday/jQuery-UI-Dialog-extended.git"
+  }
+}

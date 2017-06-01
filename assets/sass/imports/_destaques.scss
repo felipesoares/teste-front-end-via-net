@@ -1,0 +1,8 @@
+.destaques {
+    
+    //@include font-px( $bebasbold, 46, #fff);
+    /* MEDIA QUERIES */
+    @media #{$ateTablet} {}
+    @media #{$tablet} {}
+    @media #{$mobile} {}
+}

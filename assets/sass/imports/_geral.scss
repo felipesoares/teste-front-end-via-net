@@ -1,0 +1,46 @@
+/* FONTS */
+
+$light: "OpenSans-Light";
+$regular: "OpenSans";
+$italic: "OpenSans-Italic";
+$semibold: "OpenSans-Semibold";
+$semiboldItalic: "OpenSans-SemiboldItalic";
+$bold: "OpenSans-Bold";
+$boldItalic: "OpenSans-BoldItalic";
+
+/* RESET PLUGINS */
+
+/* ESTILO DEFAULT PARA A PAGINA */
+
+body {
+    font-family: $regular, sans-serif;
+}
+
+/* ESTILO DEFAULT PARA AS HEADING TAGS */
+
+.h {}
+
+
+/* ESTILO DEFAULT PARA OS PARAGRAFOS */
+
+p {}
+
+
+/* ESTILO DEFAULT PARA OS BOTOES */
+
+.btn {}
+
+
+/* MEDIA QUERIES */
+
+@media #{$full} {}
+
+@media #{$ultrabook} {}
+
+@media #{$desktop} {}
+
+@media #{$ateTablet} {}
+
+@media #{$tablet} {}
+
+@media #{$mobile} {}

@@ -1,0 +1,12 @@
+{
+    "assets": [
+        "js/default.js",
+        "js/vianet.js"
+    ],
+    "libs": [
+        "jquery/dist/jquery.min.js",
+        "jquery-ui/jquery-ui.min.js",
+        "jquery-tokeninput/build/jquery.tokeninput.min.js",
+        "jquery.maskedinput/dist/jquery.maskedinput.min.js"
+    ]
+}
