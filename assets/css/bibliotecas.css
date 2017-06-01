@@ -5,7 +5,7 @@
 /* ================================================================== */
 /* This file has a mobile-to-tablet, and tablet-to-desktop breakpoint */
 /* ================================================================== */
-@import url("../../bower_components/jquery-tokeninput/styles/token-input.css");
+@import url("../../bower_components/jquery.tagsinput/dist/jquery.tagsinput.min.css");
 @import url("../../bower_components/jquery-ui/themes/smoothness/jquery-ui.min.css");
 @media (max-width: 400px) {
   @-ms-viewport {
@@ -1497,7 +1497,5 @@
     width: 100%;
   }
 }
-/* Tokeninput */
+/*  */
 /* jQuery UI - Theme Smoothness */
-
-/*# sourceMappingURL=bibliotecas.css.map */

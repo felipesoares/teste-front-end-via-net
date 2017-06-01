@@ -3,12 +3,10 @@ $(function () {
     var dialog;
 
     dialog = $("#dialog-contato").dialog({
-        width: 'auto', // overcomes width:'auto' and maxWidth bug
-        maxWidth: 898,
-        height: 'auto',
+        width: 898,
         modal: true,
         autoOpen: false,
-        fluid: true,
+        responsive: true,
         resizable: false,
         draggable: false,
         show: {
@@ -34,38 +32,13 @@ $(function () {
     $("div[aria-describedby='dialog-contato'].ui-dialog .ui-dialog-titlebar-close").html("X").attr("title", "Fechar");
 
     $(window).resize(function () {
-        fluidDialog();
+        l = $("div[aria-describedby='dialog-contato'].ui-dialog").width();
+        a = $("div[aria-describedby='dialog-contato'].ui-dialog").height();
+        $("div[aria-describedby='dialog-contato'].ui-dialog").css("left", ((viewport.w - l)/2) );
+        $("div[aria-describedby='dialog-contato'].ui-dialog").css("top", ((viewport.h - a)/2) );
     });
 
-    $(document).on("dialogopen", ".ui-dialog", function (event, ui) {
-        fluidDialog();
-    });
-
-    function fluidDialog() {
-        var $visible = $(".ui-dialog:visible");
-        // each open dialog
-        $visible.each(function () {
-            var $this = $(this);
-            var dialog = $this.find(".ui-dialog-content").data("ui-dialog");
-            // if fluid option == true
-            if (dialog.options.fluid) {
-                var wWidth = $(window).width();
-                // check window width against dialog width
-                if (wWidth < (parseInt(dialog.options.maxWidth) + 50)) {
-                    // keep dialog from filling entire screen
-                    $this.css("max-width", "90%");
-                } else {
-                    // fix maxWidth bug
-                    $this.css("max-width", dialog.options.maxWidth + "px");
-                }
-                //reposition dialog
-                dialog.option("position", dialog.options.position);
-            }
-        });
-
-    }
-
-    function resetDialog(){
+    function resetDialog() {
         $(".dialog-contato form").reset();
         $(".dialog-contato .validacao p").html("").attr("class", "");
         $(".dialog-contato .error").removeClass("error");
@@ -80,6 +53,14 @@ $(function () {
             $(".dialog-contato .validacao p").text("Preencha os campos obrigatórios corretamente!").attr("class", "").addClass("ui-state-error").fadeIn();
         }
 
+    });
+
+    $("#telefones").tagsInput({
+        'height': '38px',
+        'width': '100%',
+        'interactive': false,
+        'defaultText': 'add a tag',
+        'placeholderColor': '#666666'
     });
 
 });

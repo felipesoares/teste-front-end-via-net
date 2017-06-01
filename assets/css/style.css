@@ -335,6 +335,7 @@ div[aria-describedby='dialog-contato'].ui-dialog .ui-dialog-buttonpane button {
   font-size: 12px;
 }
 div[aria-describedby='dialog-contato'].ui-dialog .dialog-contato {
+  display: none;
   padding: 30px 14%;
 }
 div[aria-describedby='dialog-contato'].ui-dialog .dialog-contato p {
@@ -364,7 +365,7 @@ div[aria-describedby='dialog-contato'].ui-dialog .dialog-contato form label {
 }
 div[aria-describedby='dialog-contato'].ui-dialog .dialog-contato form .campo {
   width: 100%;
-  height: 29px;
+  height: 38px;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
@@ -378,12 +379,20 @@ div[aria-describedby='dialog-contato'].ui-dialog .dialog-contato form .campo {
 }
 div[aria-describedby='dialog-contato'].ui-dialog .dialog-contato form .campo.mensagem {
   padding: 15px;
-  min-height: 99px;
+  min-height: 100px;
+}
+div[aria-describedby='dialog-contato'].ui-dialog .dialog-contato form .tagsinput {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin: 5px 0 15px;
 }
 div[aria-describedby='dialog-contato'].ui-dialog .dialog-contato form .btn-enviar {
   background: #9a3235;
   width: 250px;
-  height: 61px;
+  max-width: 100%;
+  height: 60px;
   text-align: center;
   font-family: "OpenSans";
   font-size: 18px;

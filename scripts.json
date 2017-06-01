@@ -6,7 +6,8 @@
     "libs": [
         "jquery/dist/jquery.min.js",
         "jquery-ui/jquery-ui.min.js",
-        "jquery-tokeninput/build/jquery.tokeninput.min.js",
+        "jQuery-UI-Dialog-extended/jquery.dialogOptions.js",
+        "jquery.tagsinput/src/jquery.tagsinput.js",
         "jquery.maskedinput/dist/jquery.maskedinput.min.js"
     ]
 }
