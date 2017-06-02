@@ -1,4 +1,4 @@
-Tecnologias utilizadas no Projeto:
+# Tecnologias utilizadas no Projeto:
 
 - Pré-processador CSS:
 SASS/Compass
@@ -19,3 +19,7 @@ Reset CSS -> Normalize CSS, Sistema de Grids -> Unsemantic, Ícones -> Font Awes
 jQuery, jQuery UI (Dialog Modal), jQuery Tags Input & Masked Input Plugin
 
 - Cross-Browser: IE9+, Edge, Google Chrome, Firefox, Safari
+
+# Portfólio Profissional:
+
+- <https://github.com/felipesoares/portfolio>
