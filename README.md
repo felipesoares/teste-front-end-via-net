@@ -17,3 +17,5 @@ Reset CSS -> Normalize CSS, Sistema de Grids -> Unsemantic, Ícones -> Font Awes
 
 - Bibliotecas Javascript:
 jQuery, jQuery UI (Dialog Modal), jQuery Tags Input & Masked Input Plugin
+
+CROSS-BROWSER: IE9+, Edge, Google Chrome, Firefox, Safari
