@@ -4,7 +4,7 @@
 
 <head>
 
-  <title>Teste</title>
+  <title>Teste Front End - Via Net Brasil</title>
   <meta name="description" content="Teste Front End - Via Net Brasil" />
   <meta name="author" content="Felipe Soares" />
 
@@ -14,9 +14,9 @@
 
   <link rel="stylesheet" type="text/css" href="dist/css/bibliotecas.min.css" />
   <!--
-  <link rel="stylesheet" type="text/css" href="dist/css/style.min.css" />
-  -->
   <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+  -->
+  <link rel="stylesheet" type="text/css" href="dist/css/style.min.css" />
 
 </head>
 
@@ -28,21 +28,301 @@
 
       <div class="grid-container">
 
-        <div class="grid-50 tablet-grid-50">
-          <h2 class="h">
-            <a href="#destaque-venda" id="destaque-venda">Destaque venda</a>
-          </h2>
+        <div class="titulos cf">
+          <div class="grid-50 tablet-grid-50 mobile-grid-50">
+            <a href="#destaque-venda" class="venda active">
+              Destaque venda
+              <img src="dist/img/arrow.png" alt="" />
+            </a>
+          </div>
+
+          <div class="grid-50 tablet-grid-50 mobile-grid-50">
+            <a href="#destaque-aluguel" class="aluguel">
+              Destaque aluguel
+              <img src="dist/img/arrow.png" alt="" />
+            </a>
+          </div>
         </div>
 
-        <div class="grid-50 tablet-grid-50">
-          <h2 class="h">
-            <a href="#destaque-aluguel" id="destaque-aluguel">Destaque aluguel</a>
-          </h2>
+        <div id="destaque-venda" class="destaque cf destaque-venda">
+
+          <div class="grid-50 tablet-grid-80 tablet-prefix-10 tablet-suffix-10 cboth">
+
+            <div class="item">
+
+              <figure>
+                <img src="dist/img/demo/imovel-exemplo-1.jpg" alt="Casa Geminada Castelo" />
+                <div>
+                  <span class="favoritos"><i class="fa fa-heart" aria-hidden="true"></i> favoritos</span>
+                  <span class="codigo">cod: 12345</span>
+                </div>
+              </figure>
+
+              <div class="detalhe">
+                <strong class="bairro">Castelo</strong>
+                <strong class="tipo">Casa Geminada</strong>
+                <ul class="cf">
+                  <li class="tamanho">
+                    <i class="fa fa-arrows-alt" aria-hidden="true"></i> 250 m<sup>2</sup>
+                  </li>
+                  <li class="banhos">
+                    <i class="fa fa-tint" aria-hidden="true"></i> 2 banho(s)
+                  </li>
+                  <li class="quartos">
+                    <i class="fa fa-bed" aria-hidden="true"></i> 2 quarto(s)
+                  </li>
+                  <li class="vagas">
+                    <i class="fa fa-car" aria-hidden="true"></i> 2 vaga(s)
+                  </li>
+                </ul>
+                <div class="border cf">
+                  <strong class="valor">R$ 10.000.000,00</strong>
+                  <a href="javascript:void(0)" class="btn-contato" title="Mais detalhes">
+                    <i class="fa fa-plus" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="grid-50 tablet-grid-80 tablet-prefix-10 tablet-suffix-10">
+
+            <div class="item">
+
+              <figure>
+                <img src="dist/img/demo/imovel-exemplo-2.jpg" alt="Casa Geminada Castelo" />
+              </figure>
+
+              <div class="detalhe">
+                <strong class="bairro">Castelo</strong>
+                <strong class="tipo">Casa Geminada</strong>
+                <ul class="cf">
+                  <li class="tamanho">
+                    <i class="fa fa-arrows-alt" aria-hidden="true"></i> 250 m<sup>2</sup>
+                  </li>
+                  <li class="banhos">
+                    <i class="fa fa-tint" aria-hidden="true"></i> 2 banho(s)
+                  </li>
+                  <li class="quartos">
+                    <i class="fa fa-bed" aria-hidden="true"></i> 2 quarto(s)
+                  </li>
+                  <li class="vagas">
+                    <i class="fa fa-car" aria-hidden="true"></i> 2 vaga(s)
+                  </li>
+                </ul>
+                <div class="border cf">
+                  <strong class="valor">R$ 10.000.000,00</strong>
+                  <a href="javascript:void(0)" class="btn-contato" title="Mais detalhes">
+                    <i class="fa fa-plus" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="grid-50 tablet-grid-80 tablet-prefix-10 tablet-suffix-10 cboth">
+
+            <div class="item">
+
+              <figure>
+                <img src="dist/img/demo/imovel-exemplo-1.jpg" alt="Casa Geminada Castelo" />
+                <div>
+                  <span class="favoritos"><i class="fa fa-heart" aria-hidden="true"></i> favoritos</span>
+                  <span class="codigo">cod: 12345</span>
+                </div>
+              </figure>
+
+              <div class="detalhe">
+                <strong class="bairro">Castelo</strong>
+                <strong class="tipo">Casa Geminada</strong>
+                <ul class="cf">
+                  <li class="tamanho">
+                    <i class="fa fa-arrows-alt" aria-hidden="true"></i> 250 m<sup>2</sup>
+                  </li>
+                  <li class="banhos">
+                    <i class="fa fa-tint" aria-hidden="true"></i> 2 banho(s)
+                  </li>
+                  <li class="quartos">
+                    <i class="fa fa-bed" aria-hidden="true"></i> 2 quarto(s)
+                  </li>
+                  <li class="vagas">
+                    <i class="fa fa-car" aria-hidden="true"></i> 2 vaga(s)
+                  </li>
+                </ul>
+                <div class="border cf">
+                  <strong class="valor">R$ 10.000.000,00</strong>
+                  <a href="javascript:void(0)" class="btn-contato" title="Mais detalhes">
+                    <i class="fa fa-plus" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="grid-50 tablet-grid-80 tablet-prefix-10 tablet-suffix-10">
+
+            <div class="item">
+
+              <figure>
+                <img src="dist/img/demo/imovel-exemplo-2.jpg" alt="Casa Geminada Castelo" />
+              </figure>
+
+              <div class="detalhe">
+                <strong class="bairro">Castelo</strong>
+                <strong class="tipo">Casa Geminada</strong>
+                <ul class="cf">
+                  <li class="tamanho">
+                    <i class="fa fa-arrows-alt" aria-hidden="true"></i> 250 m<sup>2</sup>
+                  </li>
+                  <li class="banhos">
+                    <i class="fa fa-tint" aria-hidden="true"></i> 2 banho(s)
+                  </li>
+                  <li class="quartos">
+                    <i class="fa fa-bed" aria-hidden="true"></i> 2 quarto(s)
+                  </li>
+                  <li class="vagas">
+                    <i class="fa fa-car" aria-hidden="true"></i> 2 vaga(s)
+                  </li>
+                </ul>
+                <div class="border cf">
+                  <strong class="valor">R$ 10.000.000,00</strong>
+                  <a href="javascript:void(0)" class="btn-contato" title="Mais detalhes">
+                    <i class="fa fa-plus" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
         </div>
 
-        <i class="fa fa-bed" aria-hidden="true"></i>
+        <div id="destaque-aluguel" class="destaque cf destaque-aluguel">
 
-        <button class="btn-contato ui-state-default ui-corner-all"><i class="ui-icon ui-icon-circle-plus"></i></button>
+          <div class="grid-50 tablet-grid-80 tablet-prefix-10 tablet-suffix-10 cboth">
+
+            <div class="item">
+
+              <figure>
+                <img src="dist/img/demo/imovel-exemplo-2.jpg" alt="Casa Geminada Castelo" />
+              </figure>
+
+              <div class="detalhe">
+                <strong class="bairro">Castelo</strong>
+                <strong class="tipo">Casa Geminada</strong>
+                <ul class="cf">
+                  <li class="tamanho">
+                    <i class="fa fa-arrows-alt" aria-hidden="true"></i> 250 m<sup>2</sup>
+                  </li>
+                  <li class="banhos">
+                    <i class="fa fa-tint" aria-hidden="true"></i> 2 banho(s)
+                  </li>
+                  <li class="quartos">
+                    <i class="fa fa-bed" aria-hidden="true"></i> 2 quarto(s)
+                  </li>
+                  <li class="vagas">
+                    <i class="fa fa-car" aria-hidden="true"></i> 2 vaga(s)
+                  </li>
+                </ul>
+                <div class="border cf">
+                  <strong class="valor">R$ 10.000.000,00</strong>
+                  <a href="javascript:void(0)" class="btn-contato" title="Mais detalhes">
+                    <i class="fa fa-plus" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="grid-50 tablet-grid-80 tablet-prefix-10 tablet-suffix-10">
+
+            <div class="item">
+
+              <figure>
+                <img src="dist/img/demo/imovel-exemplo-1.jpg" alt="Casa Geminada Castelo" />
+                <div>
+                  <span class="favoritos"><i class="fa fa-heart" aria-hidden="true"></i> favoritos</span>
+                  <span class="codigo">cod: 12345</span>
+                </div>
+              </figure>
+
+              <div class="detalhe">
+                <strong class="bairro">Castelo</strong>
+                <strong class="tipo">Casa Geminada</strong>
+                <ul class="cf">
+                  <li class="tamanho">
+                    <i class="fa fa-arrows-alt" aria-hidden="true"></i> 250 m<sup>2</sup>
+                  </li>
+                  <li class="banhos">
+                    <i class="fa fa-tint" aria-hidden="true"></i> 2 banho(s)
+                  </li>
+                  <li class="quartos">
+                    <i class="fa fa-bed" aria-hidden="true"></i> 2 quarto(s)
+                  </li>
+                  <li class="vagas">
+                    <i class="fa fa-car" aria-hidden="true"></i> 2 vaga(s)
+                  </li>
+                </ul>
+                <div class="border cf">
+                  <strong class="valor">R$ 10.000.000,00</strong>
+                  <a href="javascript:void(0)" class="btn-contato" title="Mais detalhes">
+                    <i class="fa fa-plus" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="grid-50 tablet-grid-80 tablet-prefix-10 tablet-suffix-10 cboth">
+
+            <div class="item">
+
+              <figure>
+                <img src="dist/img/demo/imovel-exemplo-2.jpg" alt="Casa Geminada Castelo" />
+              </figure>
+
+              <div class="detalhe">
+                <strong class="bairro">Castelo</strong>
+                <strong class="tipo">Casa Geminada</strong>
+                <ul class="cf">
+                  <li class="tamanho">
+                    <i class="fa fa-arrows-alt" aria-hidden="true"></i> 250 m<sup>2</sup>
+                  </li>
+                  <li class="banhos">
+                    <i class="fa fa-tint" aria-hidden="true"></i> 2 banho(s)
+                  </li>
+                  <li class="quartos">
+                    <i class="fa fa-bed" aria-hidden="true"></i> 2 quarto(s)
+                  </li>
+                  <li class="vagas">
+                    <i class="fa fa-car" aria-hidden="true"></i> 2 vaga(s)
+                  </li>
+                </ul>
+                <div class="border cf">
+                  <strong class="valor">R$ 10.000.000,00</strong>
+                  <a href="javascript:void(0)" class="btn-contato" title="Mais detalhes">
+                    <i class="fa fa-plus" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
       </div>
 
     </section>
@@ -69,9 +349,8 @@
 
       <div class="row">
         <label for="telefones">Telefone(s):</label>
-        <input type="text" name="telefones[]" id="telefones" class="campo telefones" placeholder="" autocomplete="off" readonly="readonly"
-        />
-        <a href="javascript:void(0)" id="btnAddTelefone" class="btn-add-tel ui-state-default ui-corner-all">
+        <input type="text" name="telefones" id="telefones" class="campo telefones" />
+        <a href="javascript:void(0)" id="btnAddTelefone" class="btn-add-tel ui-state-default ui-corner-all" title="Adicionar Telefone">
           <i class="ui-icon ui-icon-circle-plus"></i>
         </a>
       </div>
@@ -95,9 +374,9 @@
   <script type="text/javascript" src="dist/js/bibliotecas.min.js"></script>
 
   <!--
-  <script type="text/javascript" src="dist/js/script.min.js"></script>
-  -->
   <script type="text/javascript" src="assets/js/default.js"></script>
   <script type="text/javascript" src="assets/js/script.js"></script>
+  -->
+  <script type="text/javascript" src="dist/js/script.min.js"></script>
 
 </body>

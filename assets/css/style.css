@@ -4,18 +4,25 @@
 /**/
 /**/
 /**/
-.cf {
+.cf, .destaques .destaque .item {
   *zoom: 1;
 }
-.cf:after, .cf:before {
+.cf:after, .destaques .destaque .item:after, .cf:before, .destaques .destaque .item:before {
   content: " ";
   display: table;
 }
-.cf:after {
+.cf:after, .destaques .destaque .item:after {
   clear: both;
 }
 
 /**/
+.destaques .titulos a, .destaques .titulos a img, .destaques .destaque .item .detalhe .btn-contato, .ui-dialog .dialog-contato .btn-enviar {
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
 /**/
 /**/
 /* Estilos do Projeto */
@@ -279,9 +286,171 @@ body {
 /* ESTILO DEFAULT PARA OS PARAGRAFOS */
 /* ESTILO DEFAULT PARA OS BOTOES */
 /* MEDIA QUERIES */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  .grid-container {
+    width: 1200px;
+  }
+}
 /* Estilo das Páginas Internas do Projeto */
 .destaques {
-  /* MEDIA QUERIES */
+  padding: 70px 0;
+}
+@media screen and (max-width: 767px) {
+  .destaques {
+    padding: 40px 0 0;
+  }
+}
+.destaques .titulos {
+  margin: 0 0 60px;
+}
+@media screen and (max-width: 767px) {
+  .destaques .titulos {
+    margin: 0 0 30px;
+  }
+}
+.destaques .titulos a {
+  font-family: "OpenSans";
+  font-size: 35px;
+  color: #d88587;
+  letter-spacing: 0em;
+}
+.destaques .titulos a:hover, .destaques .titulos a.active {
+  color: #9a3235;
+}
+.destaques .titulos a:hover img, .destaques .titulos a.active img {
+  opacity: 1;
+}
+.destaques .titulos a img {
+  opacity: 0;
+  display: block;
+  margin: 15px auto 0;
+}
+.destaques .titulos .venda {
+  float: right;
+  padding: 0 20px 0 0;
+}
+.destaques .titulos .aluguel {
+  float: left;
+  padding: 0 0 0 20px;
+}
+@media screen and (max-width: 767px) {
+  .destaques .titulos .venda,
+  .destaques .titulos .aluguel {
+    font-size: 28px;
+    padding: 0;
+    text-align: center;
+  }
+}
+.destaques .destaque {
+  display: block;
+}
+.destaques .destaque.destaque-aluguel {
+  display: none;
+}
+.destaques .destaque .item {
+  position: relative;
+  margin: 0 0 35px;
+}
+.destaques .destaque .item figure {
+  float: left;
+  position: relative;
+}
+@media screen and (max-width: 767px) {
+  .destaques .destaque .item figure {
+    float: none;
+    width: 279px;
+    margin: 0 auto;
+  }
+}
+.destaques .destaque .item figure img {
+  display: block;
+}
+.destaques .destaque .item figure > div {
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 5px 10px 5px 15px;
+}
+.destaques .destaque .item figure span {
+  font-family: "OpenSans";
+  font-size: 13px;
+  color: #fff;
+  letter-spacing: 0em;
+}
+.destaques .destaque .item figure .favoritos i {
+  padding: 0 5px 0 0;
+  color: #e9b333;
+}
+.destaques .destaque .item figure .codigo {
+  float: right;
+  margin: 2px 0 0;
+}
+.destaques .destaque .item .detalhe {
+  position: absolute;
+  width: 100%;
+  padding: 0 0 0 300px;
+  height: 186px;
+}
+@media screen and (max-width: 767px) {
+  .destaques .destaque .item .detalhe {
+    position: relative;
+    padding: 10px 0 0;
+    height: auto;
+  }
+}
+.destaques .destaque .item .detalhe strong {
+  display: block;
+  font-family: "OpenSans";
+  font-size: 22px;
+  color: #333;
+  letter-spacing: 0em;
+  line-height: 26px;
+}
+.destaques .destaque .item .detalhe ul {
+  margin: 25px 0 15px;
+}
+.destaques .destaque .item .detalhe ul li {
+  margin: 0 0 15px;
+  float: left;
+  width: 50%;
+  font-family: "OpenSans";
+  font-size: 13px;
+  color: #333;
+  letter-spacing: 0em;
+}
+.destaques .destaque .item .detalhe ul li i {
+  color: #9a3235;
+  padding: 0 20px 0 0;
+}
+.destaques .destaque .item .detalhe .border {
+  border-top: 1px solid #dbdbdb;
+  padding: 10px 0 0;
+}
+.destaques .destaque .item .detalhe .valor {
+  color: #9a3235;
+  line-height: 30px;
+  float: left;
+}
+.destaques .destaque .item .detalhe .btn-contato {
+  float: right;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  width: 30px;
+  text-align: center;
+}
+.destaques .destaque .item .detalhe .btn-contato i {
+  font-size: 21px;
+  line-height: 30px;
+  color: #9a3235;
+}
+.destaques .destaque .item .detalhe .btn-contato:hover {
+  background: #000;
+}
+.destaques .destaque .item .detalhe .btn-contato:hover i {
+  color: #fff;
 }
 
 .ui-widget-overlay {
@@ -344,9 +513,23 @@ body {
   letter-spacing: 0em;
   text-align: center;
 }
+@media screen and (max-width: 767px) {
+  .ui-dialog .dialog-contato {
+    padding: 20px 20px;
+  }
+  .ui-dialog .dialog-contato p {
+    font-size: 14px;
+  }
+}
 .ui-dialog .dialog-contato .validacao {
   height: 60px;
   padding: 10px 0 0;
+}
+@media screen and (max-width: 767px) {
+  .ui-dialog .dialog-contato .validacao {
+    height: auto;
+    padding: 10px 0;
+  }
 }
 .ui-dialog .dialog-contato .validacao p {
   display: none;
@@ -396,16 +579,18 @@ body {
   width: 38px;
   height: 38px;
   cursor: pointer;
+  padding: 10px;
 }
 .ui-dialog .dialog-contato .btn-enviar {
-  background: #9a3235;
+  background: transparent;
+  border: 1px solid #9a3235;
   width: 250px;
   max-width: 100%;
   height: 60px;
   text-align: center;
   font-family: "OpenSans";
   font-size: 18px;
-  color: #fff;
+  color: #9a3235;
   letter-spacing: 0em;
   -moz-border-radius: 30px;
   -webkit-border-radius: 30px;
@@ -413,6 +598,10 @@ body {
   margin: 0 auto;
   display: block;
   cursor: pointer;
+}
+.ui-dialog .dialog-contato .btn-enviar:hover {
+  background: #9a3235;
+  color: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */

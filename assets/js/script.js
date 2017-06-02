@@ -1,9 +1,11 @@
 window.onresize = function () {
+
     // Solucionando posicionamento do modal ao redimensionar tela
     l = $(".ui-dialog").width();
     a = $(".ui-dialog").height();
     $(".ui-dialog").css("left", ((viewport.w - l) / 2));
     $(".ui-dialog").css("top", ((viewport.h - a) / 2));
+
 }
 
 $(function () {
@@ -72,6 +74,7 @@ $(function () {
         $(".dialog-contato form").reset();
         $(".dialog-contato .validacao p").html("").attr("class", "");
         $(".dialog-contato .error").removeClass("error");
+        $('#telefones').importTags('')
     }
 
     $("#btnEnviarContato").on("click", function (e) {
@@ -88,14 +91,24 @@ $(function () {
     $("#telefones").tagsInput({
         'height': '38px',
         'width': '100%',
-        'interactive': false,
-        'defaultText': 'add a tag',
-        'placeholderColor': '#666666'
+        'interactive': false
     });
 
     $("#btnAddTelefone").on("click", function (e) {
         e.preventDefault();
         telefone.dialog("open");
+    });
+
+    $(".destaques .titulos a").on("click", function (e) {
+        e.preventDefault();
+
+        var alvo = $(this).attr("href");
+
+        $(".destaques .titulos a").removeClass("active");
+        $(this).addClass("active");
+
+        $(".destaques .destaque").hide();
+        $(alvo).show();
     });
 
 });

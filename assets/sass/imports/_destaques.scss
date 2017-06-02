@@ -1,8 +1,145 @@
 .destaques {
-    
-    //@include font-px( $bebasbold, 46, #fff);
-    /* MEDIA QUERIES */
-    @media #{$ateTablet} {}
-    @media #{$tablet} {}
-    @media #{$mobile} {}
+    padding: 70px 0;
+    @media #{$mobile} {
+        padding: 40px 0 0;
+    }
+    .titulos {
+        margin: 0 0 60px;
+        @media #{$mobile} {
+            margin: 0 0 30px;
+        }
+        a {
+            @include font-px( $regular, 35, #d88587);
+            @extend %transition;
+            &:hover,
+            &.active {
+                color: #9a3235;
+                img {
+                    opacity: 1;
+                }
+            }
+            img {
+                @extend %transition;
+                opacity: 0;
+                display: block;
+                margin: 15px auto 0;
+            }
+        }
+        .venda {
+            float: right;
+            padding: 0 20px 0 0;
+        }
+        .aluguel {
+            float: left;
+            padding: 0 0 0 20px;
+        }
+        .venda,
+        .aluguel {
+            @media #{$mobile} {
+                font-size: 28px;
+                padding: 0;
+                text-align: center;
+            }
+        }
+    }
+    .destaque {
+        display: block;
+        &.destaque-aluguel {
+            display: none;
+        }
+        .item {
+            @extend %clearfix;
+            position: relative;
+            margin: 0 0 35px;
+            figure {
+                float: left;
+                position: relative;
+                @media #{$mobile} {
+                    float: none;
+                    width: 279px;
+                    margin: 0 auto;
+                }
+                img {
+                    display: block;
+                }
+                >div {
+                    background: rgba(0, 0, 0, 0.5);
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    padding: 5px 10px 5px 15px;
+                }
+                span {
+                    @include font-px( $regular, 13, #fff);
+                }
+                .favoritos {
+                    i {
+                        padding: 0 5px 0 0;
+                        color: #e9b333;
+                    }
+                }
+                .codigo {
+                    float: right;
+                    margin: 2px 0 0;
+                }
+            }
+            .detalhe {
+                position: absolute;
+                width: 100%;
+                padding: 0 0 0 (279px+21px);
+                height: 186px;
+                @media #{$mobile} {
+                    position: relative;
+                    padding: 10px 0 0;
+                    height: auto;
+                }
+                strong {
+                    display: block;
+                    @include font-px( $regular, 22, #333);
+                    line-height: 26px;
+                }
+                ul {
+                    margin: 25px 0 15px;
+                    li {
+                        margin: 0 0 15px;
+                        float: left;
+                        width: 50%;
+                        @include font-px( $regular, 13, #333);
+                        i {
+                            color: #9a3235;
+                            padding: 0 20px 0 0;
+                        }
+                    }
+                }
+                .border {
+                    border-top: 1px solid #dbdbdb;
+                    padding: 10px 0 0;
+                }
+                .valor {
+                    color: #9a3235;
+                    line-height: 30px;
+                    float: left;
+                }
+                .btn-contato {
+                    float: right;
+                    @extend %transition;
+                    @include border-radius(100%);
+                    width: 30px;
+                    text-align: center;
+                    i {
+                        font-size: 21px;
+                        line-height: 30px;
+                        color: #9a3235;
+                    }
+                    &:hover {
+                        background: #000;
+                        i {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

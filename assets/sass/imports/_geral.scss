@@ -33,6 +33,12 @@ p {}
 
 /* MEDIA QUERIES */
 
+@media screen and (min-width: 1025px) and (max-width: 1200px){
+    .grid-container{
+        width: 1200px;
+    }
+}
+
 @media #{$full} {}
 
 @media #{$ultrabook} {}
