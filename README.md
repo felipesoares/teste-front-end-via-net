@@ -1,25 +1,25 @@
 # Tecnologias utilizadas no Projeto:
 
-- *Pré-processador CSS:*
-SASS/Compass
+- Pré-processador CSS:
+*SASS/Compass*
 
-- *Task Runner:*
-Gulp
+- Task Runner:
+*Gulp*
 
-- *Gerenciador de Dependências:*
-Bower
+- Gerenciador de Dependências:
+*Bower*
 
-- *Sistema de Versionamento de Código:*
-Git
+- Sistema de Versionamento de Código:
+*Git*
 
-- *Bibliotecas CSS:*
-Reset CSS -> Normalize CSS, Sistema de Grids -> Unsemantic, Ícones -> Font Awesome
+- Bibliotecas CSS:
+*Reset CSS -> Normalize CSS, Sistema de Grids -> Unsemantic, Ícones -> Font Awesome*
 
-- *Bibliotecas Javascript:*
-jQuery, jQuery UI (Dialog Modal), jQuery Tags Input & Masked Input Plugin
+- Bibliotecas Javascript:
+*jQuery, jQuery UI (Dialog Modal), jQuery Tags Input & Masked Input Plugin*
 
-- *Cross-Browser:*
-IE9+, Edge, Google Chrome, Firefox, Safari
+- Cross-Browser:
+*IE9+, Edge, Google Chrome, Firefox, Safari*
 
 # Portfólio Profissional:
 
